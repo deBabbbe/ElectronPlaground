@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Versions from './components/Versions.vue'
+import Date from './components/Date.vue'
 
 const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
 </script>
@@ -23,4 +24,5 @@ const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
     </div>
   </div>
   <Versions />
+  <Date />
 </template>
